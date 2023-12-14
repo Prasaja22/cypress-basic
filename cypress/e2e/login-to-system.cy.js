@@ -1,5 +1,5 @@
 describe("user harus bisa login ke sistem", () => {
-  it("passed", () => {
+  it.only("passed", () => {
     cy.visit("http://127.0.0.1:8000/");
 
     // step 1 : select dulu elemen di html

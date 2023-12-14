@@ -60,7 +60,7 @@ describe("Admin create new user", () => {
     cy.get('[data-cy="logout-btn"]').click();
   });
 
-  it.only("admin create new user but type invalid password", () => {
+  it("admin create new user but type invalid password", () => {
     cy.visit("http://127.0.0.1:8000/user-management/user");
     cy.get(".card-header-action > .btn-icon").click();
     cy.get("#name").type("GhozyGG");
